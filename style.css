@@ -19,6 +19,8 @@ nav .links {
     align-items: center;
     margin-right: 3vw;
     font-family: 'Grandstander', cursive;
+    font-weight: 500;
+    font-size: 13pt;
 }
 
 nav .logo {
@@ -81,6 +83,9 @@ nav .logo {
   }
   
   .btn:hover{
+    color: crimson;
+    cursor: pointer;
+    border: 3px solid crimson;
     z-index:100;
     -webkit-animation:scale 0.5s linear;
     -moz-animation:scale 0.5s linear;
@@ -358,6 +363,7 @@ h1 {
 
 p {
     font-family: 'Grandstander', cursive;
+    font-weight:200;
     width: 90%;
 }
 
@@ -371,6 +377,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.all-skills h2 {
+  margin-bottom: 0%;
 }
 
 .questions {
@@ -394,6 +404,7 @@ h2 {
     text-align: center;   
     font-family: 'Staatliches', cursive; 
     font-size: 20pt;
+    margin-bottom: 2.5%;
 }
 
 .modal-window {
@@ -407,7 +418,7 @@ h2 {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .modal-window:target {
@@ -417,16 +428,77 @@ h2 {
 }
 
 .modal-window #outer {
-    width: 68vw;
-    height: 80vh;
+  width: 80vw;
+  height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2em;
     background-color: rgb(238, 238, 238);
-    background-image: url("images/world-map.png");
     border: 2px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  align-items: center;
+}
+
+.place {
+  width: 26%;
+  height: 30%;
+  margin-bottom: 5%;
+  background-color: crimson;
+}
+
+.timeline-pics {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid black;
+  margin-bottom: -5%;
+}
+
+.place-name {
+  margin-bottom: -2%;
+}
+
+.timeline-pics {
+  -webkit-animation:scaledown 0.5s linear;
+  -moz-animation:scaledown 0.5s linear;
+  animation:scaledown 0.5s linear;
+  transform-origin:50% 50%;
+  animation-fill-mode: forwards;
+}
+
+.timeline-pics:hover{
+  z-index:100;
+  -webkit-animation:scale 0.5s linear;
+  -moz-animation:scale 0.5s linear;
+  animation:scale 0.5s linear;
+  transform-origin:50% 50%;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes scale{
+  0%{
+    transform:scale(1.0);
+  }
+  100%{
+    transform:scale(1.1);
+    -webkit-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+  }
+}
+
+@keyframes scaledown{
+  0%{
+    transform:scale(1.1);
+  }
+  100%{
+    transform:scale(1.0);
+  }
 }
   
   
@@ -457,7 +529,7 @@ h2 {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .modal-window1:target {
@@ -557,7 +629,7 @@ h2 {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .modal-window2:target {
@@ -693,6 +765,7 @@ h3 {
 
 .dance-link {
     font-family: 'Grandstander', cursive;
+    font-weight: 200;
     margin-left: 2%;
     margin-right: 2%;
 
@@ -731,14 +804,25 @@ h3 {
 }
 
 #why-dali {
-    margin-bottom: 2%;
+    margin-bottom: 0%;
 }
 
 .dali-blurb {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     width: 83%;
 }
 
 #close {
     font-family: 'Grandstander', cursive;
+    font-weight: 200;
 }
+
+#dev {
+  font-size: 15pt;
+  text-align: center;
+}
+
+#dev-bio {
+  margin-bottom: 10%;
+}
+

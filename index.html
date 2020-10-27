@@ -5,7 +5,7 @@
     <title>kathycui.me</title>
     <script src="https://kit.fontawesome.com/9c4f189b7e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200;500&family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -17,7 +17,6 @@
                 <a href="#bio" class="bio-nav">DALI</a>
                 <a href="#projects" class="projects-nav">projects</a>
                 <a href="#connect" class="connect-nav">connect!</a>
-
             </div>
         </nav>
         <div class="about" id="aboutme">
@@ -25,26 +24,55 @@
                 <img src="images/profile.jpg" id="pfp"/>
                 <h1 id="hi">Hi! I'm Kathy! </h1>
                 <p>I'm a Dartmouth '22, studying Computer Science modified with Engineering Sciences.<br>
-                    I was born in Cambridge, England, and after 20 years of constant moving, I have settled in Frisco, TX. <br><br>
+                    I was born in Cambridge, England, and after 20 years of constant moving, I now live in Frisco, TX. <br><br>
                     click the links on the right to find out more about me! 
                 </p>
             </div>
             <div class="hobbies">
                 <div id="map" class="hobby">
-                    <div class="btn">
-                        <a href="#open-modal" class="hobby-link">life map</a>
+                    <div class="btn" onclick="location.href='#open-modal'">
+                        <h2 class="hobby-link">life timeline</h2>
                         <p>get to know my life story a little bit!</p>
                     </div>
                     <div id="open-modal" class="modal-window">
                         <div id="outer">
                             <a href="#aboutme" title="Close" id="close" class="modal-close">CLOSE</a>
-                            <img src="" />
+                            <div class="place" id="cambridge">
+                                <img class="timeline-pics" src="images/cambridge.jpg" />
+                                <h3 class="place-name">(1) Cambridge, England</h3>
+                                <p>I was born here and lived here until I was 18 months.</p>
+                            </div>
+                            <div class="place" id="germany">
+                                <img class="timeline-pics" src="images/stuttgart.jpg" />
+                                <h3 class="place-name">(2) Stuttgart, Germany</h3>
+                                <p>I lived here for around two years, or until I was 3 years old.</p>
+                            </div>
+                            <div class="place" id="hanover">
+                                <img class="timeline-pics" src="images/hanover.jpg" />
+                                <h3 class="place-name">(3) Hanover, NH</h3>
+                                <p>My dad researched at Dartmouth, and I went to daycare here!</p>
+                            </div>
+                            <div class="place" id="arkansas">
+                                <img class="timeline-pics" src="images/arkansas.jpg" />
+                                <h3 class="place-name">(4) Little Rock, AR</h3>
+                                <p>From 6 to 13 years old, I went to elementary and middle school here.</p>
+                            </div>
+                            <div class="place" id="memphis">
+                                <img class="timeline-pics" src="images/memphis.jpeg" />
+                                <h3 class="place-name">(5) Memphis, TN</h3>
+                                <p>I spent all 4 years of high school here!</p>
+                            </div>
+                            <div class="place" id="texas">
+                                <img class="timeline-pics" src="images/dallas.jpg" />
+                                <h3 class="place-name">(6) Frisco, TX</h3>
+                                <p>My famliy now lives in Texas!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="dance" class="hobby">
-                    <div class="btn">
-                        <a href="#open-modal1" class="hobby-link">dance</a>
+                    <div class="btn" onclick="location.href='#open-modal1'">
+                        <h2 class="hobby-link">dance</h2>
                         <p>I love dancing and am super passionate about music and the arts!</p>
                     </div>
                     <div id="open-modal1" class="modal-window1">
@@ -69,8 +97,8 @@
                     </div>
                 </div>
                 <div id="china" class="hobby">
-                    <div class="btn">
-                        <a href="#open-modal2" class="hobby-link">study abroad</a>
+                    <div class="btn" onclick="location.href='#open-modal2'">
+                        <h2 class="hobby-link">study abroad</h2>
                         <p>Take a peek at my 19F adventures in China!</p>
                     </div>
                     <div id="open-modal2" class="modal-window2">
@@ -119,12 +147,14 @@
                 </div>
             </div>
             <div id="enjoy" class="bio-part">
-                <h1 class="single-bio">Development</h1>
+                <h1 class="single-bio" id="dev-bio">Development</h1>
+                <i id="dev-icon" class="fas fa-quote-left fa-2x"></i>
                 <p class="questions" id="dev">Since I began learning how to code, programming has blessed me in so many ways. <br> 
                     It has brought so many friendships into my life and allowed me to develop life skills that extend beyond the scope of academia. <br>
                     I've been able to create things that I'm proud of and see their impacts materialize even in the smallest ways.
                 </p>
-            </div>
+                <i id="dev-icon" class="fas fa-quote-right fa-2x"></i>
+            </div> 
             <div class="bio-part">
                 <h1 class="single-bio" id="why-dali">Why DALI?</h1>
                 <div id="dali" class="questions">
