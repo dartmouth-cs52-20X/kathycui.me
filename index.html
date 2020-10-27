@@ -5,16 +5,13 @@
     <title>kathycui.me</title>
     <script src="https://kit.fontawesome.com/9c4f189b7e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Luckiest+Guy&family=Open+Sans:ital@1&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <div>
-        <nav>
-            <a href="#" class="logo">Kathy Cui</a>
+        <nav id="nav">
+            <a href="#nav" class="logo">Kathy Cui</a>
             <div class="links">
                 <a href="#aboutme" class="about-nav">about</a>
                 <a href="#bio" class="bio-nav">DALI</a>
@@ -26,67 +23,71 @@
         <div class="about" id="aboutme">
             <div class="about-blurb">
                 <img src="images/profile.jpg" id="pfp"/>
-                <h1>Hi! I'm Kathy! </h1>
+                <h1 id="hi">Hi! I'm Kathy! </h1>
                 <p>I'm a Dartmouth '22, studying Computer Science modified with Engineering Sciences.<br>
-                    I was born in Cambridge, England, and after 20 years of constant moving, I have settled in Frisco, TX. <br>
+                    I was born in Cambridge, England, and after 20 years of constant moving, I have settled in Frisco, TX. <br><br>
                     click the links on the right to find out more about me! 
                 </p>
             </div>
             <div class="hobbies">
                 <div id="map" class="hobby">
                     <div class="btn">
-                        <a href="#open-modal">life map</a>
+                        <a href="#open-modal" class="hobby-link">life map</a>
                         <p>get to know my life story a little bit!</p>
                     </div>
                     <div id="open-modal" class="modal-window">
                         <div id="outer">
-                            <a href="#" title="Close" class="modal-close">Close</a>
+                            <a href="#aboutme" title="Close" id="close" class="modal-close">CLOSE</a>
                             <img src="" />
                         </div>
                     </div>
                 </div>
                 <div id="dance" class="hobby">
                     <div class="btn">
-                        <a href="#open-modal1">dance</a>
-                        <p>I absolutely love dancing and am super passionate about music and the arts!</p>
+                        <a href="#open-modal1" class="hobby-link">dance</a>
+                        <p>I love dancing and am super passionate about music and the arts!</p>
                     </div>
                     <div id="open-modal1" class="modal-window1">
                         <div id="outer1">
-                            <a href="#" title="Close" class="modal-close1">Close</a>
-                            <h1>Dance!</h1>
-                            <p> I trained in ballet and contemporary for seven years before quitting in seventh grade to focus on other extracurriculars. <br>
+                            <a href="#aboutme" title="Close" id="close" class="modal-close1">CLOSE</a>
+                            <h1 class="modal-h1">Dance!</h1>
+                            <p id="dance-blurb"> I trained in ballet and contemporary for seven years before quitting in seventh grade to focus on other extracurriculars. <br>
                                 Six years later, I found a new dance family here at Dartmouth!
                             </p>
-                            <img class="dance-img" src="images/little-me.JPG" />
-                            <img class="dance-img" src="images/stsl.JPG" />
-                            <img class="dance-img" src="images/uji-fam.JPG" />
+                            <div id="dance-pics">
+                                <img class="dance-img" src="images/little-me.JPG" />
+                                <img class="dance-img" src="images/stsl.JPG" />
+                                <img class="dance-img" src="images/uji-fam.JPG" />
+                            </div>
                             <div class="music-links">
                                 <h3>you can find me on these sites!</h3>
-                                <a href="https://www.youtube.com/channel/UCfRTQbhvwHoR5An8TpRE2pQ">UJIMA Youtube</a>
-                                <a href="https://www.ujimadartmouth.com/">UJIMA Website</a>
-                                <a href="https://open.spotify.com/user/kandikain19?si=M9rkrSeqRNaYG7eIStzhKA">My Spotify</a>
+                                <a class="dance-link" href="https://www.youtube.com/channel/UCfRTQbhvwHoR5An8TpRE2pQ">UJIMA Youtube</a>
+                                <a class="dance-link" href="https://www.ujimadartmouth.com/">UJIMA Website</a>
+                                <a class="dance-link" href="https://open.spotify.com/user/kandikain19?si=M9rkrSeqRNaYG7eIStzhKA">My Spotify</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="china" class="hobby">
                     <div class="btn">
-                        <a href="#open-modal2">study abroad</a>
+                        <a href="#open-modal2" class="hobby-link">study abroad</a>
                         <p>Take a peek at my 19F adventures in China!</p>
                     </div>
                     <div id="open-modal2" class="modal-window2">
                         <div id="outer2">
-                            <a href="#" title="Close" class="modal-close2">Close</a>
-                            <h1>China!</h1>
-                            <p>My study abroad in China was one of my most favorite terms while at Dartmouth! Below are some of the most memorable places we visited.</p>
-                            <img class="abroad-img" src="images/beijing-1.jpg" />
-                            <img class="abroad-img" src="images/tiananmen.jpg" />
-                            <img class="abroad-img" src="images/great-wall.jpg" />
-                            <img class="abroad-img" src="images/tibet-2.jpg" />
-                            <img class="abroad-img" src="images/tibet-1.jpg" />
-                            <img class="abroad-img" src="images/tibet-3.jpg" />
-                            <img class="abroad-img" src="images/anhui-1.jpg" />
-                            <img class="abroad-img" src="images/anhui-2.jpg" />
+                            <a href="#aboutme" title="Close" id="close" class="modal-close2">CLOSE</a>
+                            <h1 class="modal-h1">China!</h1>
+                            <p id="china-blurb">My study abroad in China by far the best experience I've had! Below are some of my favorite memories.</p>
+                            <div id="china-pics">
+                                <img class="abroad-img" src="images/beijing-1.jpg" />
+                                <img class="abroad-img" src="images/tiananmen.jpg" />
+                                <img class="abroad-img" src="images/great-wall.jpg" />
+                                <img class="abroad-img" src="images/tibet-2.jpg" />
+                                <img class="abroad-img" src="images/tibet-1.jpg" />
+                                <img class="abroad-img" src="images/tibet-3.jpg" />
+                                <img class="abroad-img" src="images/anhui-1.jpg" />
+                                <img class="abroad-img" src="images/anhui-2.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,7 +95,7 @@
         </div>
         <div class="bio" id="bio">
             <div id="skills" class="bio-part">
-                <h1>Qualifications</h1>
+                <h1 class="single-bio">Qualifications</h1>
                 <div class="all-skills">
                     <h2>Software development</h2>
                     <ul>
@@ -118,19 +119,21 @@
                 </div>
             </div>
             <div id="enjoy" class="bio-part">
-                <h1>Development</h1>
+                <h1 class="single-bio">Development</h1>
                 <p class="questions" id="dev">Since I began learning how to code, programming has blessed me in so many ways. <br> 
                     It has brought so many friendships into my life and allowed me to develop life skills that extend beyond the scope of academia. <br>
                     I've been able to create things that I'm proud of and see their impacts materialize even in the smallest ways.
                 </p>
             </div>
-            <div id="why-dali" class="bio-part">
-                <h1>Why DALI?</h1>
+            <div class="bio-part">
+                <h1 class="single-bio" id="why-dali">Why DALI?</h1>
                 <div id="dali" class="questions">
-                    <h2>friendships</h2>
-                    <h2>programming</h2>
-                    <h2>self-improvement</h2>
-                    <h2>impacts</h2>
+                    <h2 class="dali-reason">friendships</h2>
+                    <p class="dali-blurb">I am so excited to connect with more people and make lasting friendships through a mutual passion.</p>
+                    <h2 class="dali-reason">programming & impacts</h2>
+                    <p class="dali-blurb">DALI allows me consistency in improving and applying my programming skills, as well as doing my part to positively impact the world.</p>
+                    <h2 class="dali-reason">self-improvement</h2>
+                    <p class="dali-blurb">Working with others will push me expand my problem-solving skills and improve my communication skills.</p>
                 </div>
             </div>
         </div>
@@ -139,17 +142,17 @@
             <div class="specific-projects">
                 <div id="aptitune" class="proj">
                     <img id="aptitune-header" src="images/aptitune.jpg" />
-                    <h2>AptiTune</h2>
+                    <h2 class="proj-header">AptiTune</h2>
                     <p id="aptitune-blurb">AptiTune is an interactive, sheet-music learning experience, built using the react.js framework. It is currently in the works of becoming a startup, as our team of six continues the development process.</p>
                     <img id="aptitune-gif" src="images/aptitune-landing.gif" />
-                    <a id="aptitune" href="https://aptitune.surge.sh/">Check it out here!</a>
+                    <a class="aptitune" href="https://aptitune.surge.sh/">Check it out here!</a>
                 </div>
                 <div id="sudoku" class="proj">
                     <img id="sudoku-header" src="images/sudoku.jpg" />
-                    <h2>Sudoku</h2>
+                    <h2 class="proj-header">Sudoku</h2>
                     <p>This program was developed as a cs50 final project, the most memorable of this experience being our incredible teamwork and efficient algorithms.</p>
                     <img id="sudoku-gif" src="images/sudoku.gif" />
-                    <p>*code is unable to accessed due to privacy status of the class repo.</p>
+                    <p>*code is unable to be accessed due to privacy status of the class repo.</p>
                 </div>
             </div>
         </div>

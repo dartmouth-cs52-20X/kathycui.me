@@ -18,6 +18,7 @@ nav .links {
     justify-content: space-between;
     align-items: center;
     margin-right: 3vw;
+    font-family: 'Grandstander', cursive;
 }
 
 nav .logo {
@@ -25,6 +26,8 @@ nav .logo {
     display: flex;
     align-items: center;
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 27pt;
 }
 
 .about {
@@ -134,6 +137,9 @@ nav .logo {
     margin-right: 3vw;
     border: 3px solid black;
     background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 i {
@@ -257,9 +263,9 @@ i {
 .projects {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 7vh;
 }
 
 #collab-header {
@@ -276,8 +282,9 @@ i {
 .proj {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 30%;
-    height: 90%;
+    height: 80%;
     border: 3px solid black;
     background-color: rgb(238, 238, 238);
     margin-left: 5vw;
@@ -291,11 +298,25 @@ i {
     border-bottom: 2px solid black; 
 }
 
+#aptitune-gif, #sudoku-gif {
+    width: 100%;
+    height: fit-content;
+}
+
 #sudoku-header {
     width: 100%;
     height: 18%;
     object-fit: cover;
     border-bottom: 2px solid black; 
+}
+
+.proj-header {
+    margin-bottom: 0%;
+}
+
+.aptitune {
+    font-family: 'Staatliches', cursive;
+    margin-top: 2%;
 }
 
 .footer {
@@ -304,6 +325,7 @@ i {
     align-items: center;
     width: 100vw;
     height: 10vh;
+    padding-bottom: none;
     background-color: rgb(238, 238, 238);
 }
 
@@ -325,6 +347,23 @@ a:hover {
 
 h1 {
     text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 35pt;
+}
+
+#hi {
+    margin-top: 2%;
+    margin-bottom: -1%;
+}
+
+p {
+    font-family: 'Grandstander', cursive;
+    width: 90%;
+}
+
+.single-bio {
+    margin-top: 5%;
+    margin-bottom: -1%;
 }
 
 .all-skills {
@@ -345,6 +384,16 @@ h2 {
     display:flex;
     justify-content: center;
     text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 20pt;
+}
+
+.hobby-link {
+    width: 50%;
+    height: 20%;
+    text-align: center;   
+    font-family: 'Staatliches', cursive; 
+    font-size: 20pt;
 }
 
 .modal-window {
@@ -375,7 +424,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2em;
-    background: #ffffff;
+    background-color: rgb(238, 238, 238);
     background-image: url("images/world-map.png");
     border: 2px solid black;
 }
@@ -425,14 +474,17 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2em;
-    background: #ffffff;
+    background-color: rgb(238, 238, 238);
     border: 2px solid black;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dance-img {
     width: 30%;
-    height: 60%;
+    height: 100%;
     object-fit: cover;
     margin-left: 1%;
     margin-right: 1%;
@@ -522,14 +574,17 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2em;
-    background: #ffffff;
+    background-color: rgb(238, 238, 238);
     border: 2px solid black;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .abroad-img {
     width: 20%;
-    height: 35%;
+    height: 47%;
     object-fit: cover;
     margin-left: 1%;
     margin-right: 1%;
@@ -625,4 +680,65 @@ ul {
 i:hover {
     color: crimson;
     cursor: pointer;
+}
+
+.modal-h1 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+h3 {
+    font-family: 'Staatliches', cursive;
+}
+
+.dance-link {
+    font-family: 'Grandstander', cursive;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+#dance-blurb {
+    margin-bottom: 2%;
+}
+
+#dance-pics {
+    height: 60%;
+}
+
+#china-blurb {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#china-pics {
+    height: 74%;
+}
+
+.music-links {
+    width: 50%;
+    margin-top: 1%;
+}
+
+#dali {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dali-reason {
+    margin-bottom: 0%;
+}
+
+#why-dali {
+    margin-bottom: 2%;
+}
+
+.dali-blurb {
+    margin-bottom: 5%;
+    width: 83%;
+}
+
+#close {
+    font-family: 'Grandstander', cursive;
 }
